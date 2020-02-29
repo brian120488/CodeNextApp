@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <View
+        android:id="@+id/topBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topBorder">
+
+        <Button
+            android:id="@+id/aboutButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#CACACA"
+            android:onClick="scrollToAbout"
+            android:text="About" />
+
+        <Button
+            android:id="@+id/newsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="scrollToNews"
+            android:text="News" />
+
+        <Button
+            android:id="@+id/programsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="scrollToPrograms"
+            android:text="Programs" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomBorder"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bottomBorder"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <ImageView
+                android:id="@+id/codeNextLogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/code_next_logo" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <View
+                android:id="@+id/bottomBorder2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#CACACA"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <Button
+                android:id="@+id/applyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@layout/mybutton"
+                android:onClick="apply"
+                android:padding="10dp"
+                android:text="Apply Now"
+                android:textColor="#ffffff" />
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <View
+                android:id="@+id/bottomBorder3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="What is Code Next? "
+                android:textSize="32sp" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <ImageView
+                android:id="@+id/think"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/think" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <ImageView
+                android:id="@+id/make"
+                android:layout_width="match_parent"
+                android:layout_height="380dp"
+                app:srcCompat="@drawable/make" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <ImageView
+                android:id="@+id/lead"
+                android:layout_width="match_parent"
+                android:layout_height="360dp"
+                app:srcCompat="@drawable/lead" />
+
+            <View
+                android:id="@+id/view9"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <View
+                android:id="@+id/bottomBorder5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="News"
+                android:textSize="48sp" />
+
+            <View
+                android:id="@+id/view13"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/newsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Brian comes late to class."
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/view12"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <View
+                android:id="@+id/bottomBorder4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="176dp" />
+
+            <View
+                android:id="@+id/view17"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Programs"
+                android:textSize="48sp" />
+
+            <View
+                android:id="@+id/view14"
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/workshops"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Workshops"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/workshopsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Making and design workshops for 9th graders. "
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/workshopsDescription2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="These introduce students to computational "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/workshopsDescription3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="thinking and dispel misconceptions about CS.  "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view18"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/foundations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foundations"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/foundationsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our flagship, project-based CS exposure "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/foundationsDescription2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="program for incoming 10th graders. This "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/foundationsDescription3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="program includes two modules–CS and "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/foundationsDescription4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="academic enrichment."
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <View
+                android:id="@+id/view20"
+                android:layout_width="match_parent"
+                android:layout_height="32dp" />
+
+            <TextView
+                android:id="@+id/teamEdge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team Edge"
+                android:textColor="#000000"
+                android:textSize="32sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A rigorous high school program for 10th and "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11th graders that includes CS, academic "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="enrichment, leadership development, and "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="navigating the college application/college-"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="going experience for students and their "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="families. Each Team Edge student receives a "
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/teamEdgeDescription7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Google mentor in their 10th grade year."
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
